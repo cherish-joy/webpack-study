@@ -1,0 +1,12 @@
+$fontSize: 24px;
+$bgColor: cyan;
+
+ul {
+  font-size: $fontSize;
+  user-select: none;
+  li {
+    &:nth-child(2n) {
+      background-color: $bgColor;
+    }
+  }
+}

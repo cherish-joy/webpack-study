@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'iconfont'; /* Project id  */
+  src: url('../assets/fonts/iconfont.ttf') format('truetype');
+}
+body {
+  background-color: pink;
+  user-select: none;
+}
+
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-size: 32px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-aichegujiabeifen12:before {
+  content: '\e604';
+}
+
+.icon-fakuandaijiaobeifen:before {
+  content: '\e605';
+}
+
+.icon-xinchebibei:before {
+  content: '\e602';
+}
