@@ -11,6 +11,12 @@ module.exports = {
     assetModuleFilename: 'images/[name][hash:6][ext]',
     clean: true,
   },
+  mode: 'development',
+  devServer: {
+    port: 8888, //端口号
+    open: true, //自动打开浏览器
+    hot: true, //开启热模块更新
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
