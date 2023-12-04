@@ -1,6 +1,6 @@
-import { sum } from './utils/sum';
+import { sum } from '@/utils/sum';
 import { createApp } from 'vue';
-import Home from './pages/home.vue';
+import Home from 'pages/home';
 // import './pages/index';
 
 console.log(sum(10, 20));

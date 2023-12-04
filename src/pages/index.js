@@ -1,8 +1,8 @@
-import '../css/index.css';
-import '../css/content.less';
-import '../css/list.scss';
+import 'css/index.css';
+import 'css/content.less';
+import 'css/list.scss';
 //图片资源
-import ZJU from '../assets/imgs/zju.jpg';
+import ZJU from 'assets/imgs/zju.jpg';
 
 //普通的h2元素
 const h2El = document.createElement('h2');

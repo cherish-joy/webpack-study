@@ -8,6 +8,16 @@ module.exports = {
     assetModuleFilename: 'images/[name][hash:6][ext]',
     clean: true,
   },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+      utils: path.resolve(__dirname, 'src/utils'),
+      pages: path.resolve(__dirname, 'src/pages'),
+      css: path.resolve(__dirname, 'src/css'),
+      assets: path.resolve(__dirname, 'src/assets'),
+    },
+    extensions: ['...', '.vue'],
+  },
   module: {
     rules: [
       {
