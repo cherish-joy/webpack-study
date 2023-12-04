@@ -1,4 +1,5 @@
 const path = require('path');
+const { VueLoaderPlugin } = require('vue-loader');
 module.exports = {
   entry: './src/main.js',
   output: {
@@ -44,6 +45,11 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         type: 'asset/resource',
       },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader',
+      },
     ],
   },
+  plugins: [new VueLoaderPlugin()],
 };
