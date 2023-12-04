@@ -7,23 +7,17 @@ module.exports = {
   entry: './src/main.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, '../dist'),
     assetModuleFilename: 'images/[name][hash:6][ext]',
     clean: true,
   },
-  mode: 'development',
-  devServer: {
-    port: 8888, //端口号
-    open: true, //自动打开浏览器
-    hot: true, //开启热模块更新
-  },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
-      utils: path.resolve(__dirname, 'src/utils'),
-      pages: path.resolve(__dirname, 'src/pages'),
-      css: path.resolve(__dirname, 'src/css'),
-      assets: path.resolve(__dirname, 'src/assets'),
+      '@': path.resolve(__dirname, '../src'),
+      utils: path.resolve(__dirname, '../src/utils'),
+      pages: path.resolve(__dirname, '../src/pages'),
+      css: path.resolve(__dirname, '../src/css'),
+      assets: path.resolve(__dirname, '../src/assets'),
     },
     extensions: ['...', '.vue'],
   },
