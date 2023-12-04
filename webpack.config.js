@@ -1,5 +1,8 @@
 const path = require('path');
 const { VueLoaderPlugin } = require('vue-loader');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { DefinePlugin } = require('webpack');
+
 module.exports = {
   entry: './src/main.js',
   output: {
@@ -61,5 +64,11 @@ module.exports = {
       },
     ],
   },
-  plugins: [new VueLoaderPlugin()],
+  plugins: [
+    new VueLoaderPlugin(),
+    new HtmlWebpackPlugin({ title: 'Hello Webpack', template: './src/index.html' }),
+    new DefinePlugin({
+      BASE_URL: JSON.stringify('./'),
+    }),
+  ],
 };
